@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap");
+
 /* Basic css reset style */
 *,
 *::before,
@@ -17,6 +19,10 @@ body {
 a {
   cursor: pointer;
 }
+html,
+body {
+  height: 100%;
+}
 
 /* font setting */
 
@@ -27,6 +33,7 @@ h3 {
 }
 
 /* card content setting */
+
 .blog-container {
   max-width: 860px;
   margin: 0 auto;
@@ -34,14 +41,16 @@ h3 {
 .blog-wrapper {
   width: 88%;
 }
-/* .card-content {
-  width: 90%;
+
+/* .blog-post-container {
+  margin-top: 100px;
 } */
 
 /* Card flex box */
 .card-flex {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* Header Setting */
@@ -50,6 +59,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+
 .blog-header-link,
 .fa-magnifying-glass {
   /* padding-left: 10px; */
@@ -110,7 +120,9 @@ h2 {
 .card-link,
 .card-date,
 .footer-content,
-.footer-link {
+.footer-link,
+.blog-post-para,
+.aside-link {
   font-size: 1.4rem;
 }
 
@@ -132,4 +144,99 @@ h2 {
 
 .footer-link {
   color: #3379b3;
+}
+
+/********************** Blog Post article ******************/
+section.blog-post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex-direction: ; */
+}
+
+.blog-post-content {
+  flex: 2;
+  margin-right: 30px;
+}
+
+.blog-post-aside {
+  flex: 1;
+}
+
+.aside-link {
+  display: block;
+  color: #3379b3;
+  padding-bottom: 5px;
+}
+
+.blog-post-date {
+  font-size: 1.2rem;
+  color: #888;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.blog-post-link {
+  color: #3379b3;
+}
+
+.blog-post-para {
+  color: #555;
+  line-height: 2rem;
+}
+
+.aside-links-header {
+  font-style: italic;
+  font-family: "PT Serif", serif;
+  margin-bottom: 5px;
+}
+
+.aside-about-container {
+  background-color: rgb(244, 244, 244);
+  padding: 10px 15px;
+}
+
+.aside-article {
+  margin-top: 0;
+}
+.aside-article-para {
+  margin: 0;
+}
+
+hr {
+  border-top: 1px solid rgb(240, 239, 239);
+}
+
+.blog-para-outline {
+  border: 2px solid rgb(240, 239, 239);
+  padding: 10px;
+}
+
+.blog-button {
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin: 20px 0 40px 0;
+  background-color: white;
+  color: #ccc;
+  border: 2px solid #ccc;
+}
+
+.blog-button-avtive {
+  background-color: white;
+  color: #3379b3;
+  border: 2px solid #3379b3;
+}
+
+.aside-archives-container,
+.aside-elsewhere-container {
+  padding: 10px 15px;
+}
+.blog-heading-para {
+  margin-top: 5px;
+}
+.blog-post-subheading {
+  margin-bottom: 0;
+}
+.blog-sub-para {
+  margin-top: 5px;
 }
